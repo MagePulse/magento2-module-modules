@@ -1,0 +1,29 @@
+{
+    "name": "magepulse/magento2-module-modules",
+    "description": "Adds installed Magento module data to the MagePulse Collector payload.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Clive Walkden",
+            "email": "clive@magepulse.com",
+            "homepage": "https://magepulse.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@magepulse.com"
+    },
+    "license": "proprietary",
+    "require": {
+        "magento/framework": ">=2.3.0",
+        "magepulse/magento2-module-core": "^1.1",
+        "magepulse/magento2-module-collector": "^0.1"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "MagePulse\\Modules\\": ""
+        }
+    }
+}
