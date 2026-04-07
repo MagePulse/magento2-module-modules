@@ -17,8 +17,8 @@
   "license": "proprietary",
   "require": {
     "magento/framework": ">=2.3.0",
-    "magepulse/magento2-module-core": "^1.1",
-    "magepulse/magento2-module-collector": "^0.1"
+    "magepulse/magento2-module-core": "*",
+    "magepulse/magento2-module-collector": "*"
   },
   "autoload": {
     "files": [
