@@ -54,11 +54,14 @@ class ModulesModel implements CollectorInterface
     {
         $modules = [];
         foreach ($this->fullModuleList->getNames() as $moduleName) {
+            $moduleMeta = $this->moduleMetaInfo->getModuleMeta($moduleName);
+            $moduleMeta = is_array($moduleMeta) ? $moduleMeta : [];
             $modules[] = [
-                'name'          => $moduleName,
-                'version'       => $this->getVersion($moduleName),
-                'status'        => $this->getStatus($moduleName),
-                'composer_name' => $this->moduleMetaInfo->getModuleMeta($moduleName)['name'] ?? 'N/A',
+                'name'             => $moduleName,
+                'module_version'   => $this->getVersion($moduleName),
+                'composer_version' => $moduleMeta['version'] ?? 'N/A',
+                'status'           => $this->getStatus($moduleName),
+                'composer_name'    => $moduleMeta['name'] ?? 'N/A',
             ];
         }
         return $modules;
