@@ -2,7 +2,7 @@
   "name": "magepulse/magento2-module-modules",
   "description": "Adds installed Magento module data to the MagePulse Collector payload.",
   "type": "magento2-module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [
     {
       "name": "Clive Walkden",
