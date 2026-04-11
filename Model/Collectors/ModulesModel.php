@@ -58,10 +58,12 @@ class ModulesModel implements CollectorInterface
             $moduleMeta = is_array($moduleMeta) ? $moduleMeta : [];
             $modules[] = [
                 'name'             => $moduleName,
-                'module_version'   => $this->getVersion($moduleName),
-                'composer_version' => $moduleMeta['version'] ?? 'N/A',
-                'status'           => $this->getStatus($moduleName),
                 'composer_name'    => $moduleMeta['name'] ?? 'N/A',
+                'composer_version' => $moduleMeta['version'] ?? 'N/A',
+                'module_version'   => $this->getVersion($moduleName),
+                'enabled'          => $this->getStatus($moduleName),
+                'license'          => $moduleMeta['license'] ?? 'N/A',
+                'support'          => $moduleMeta['support']['url'] ?? 'N/A',
             ];
         }
         return $modules;
@@ -75,6 +77,6 @@ class ModulesModel implements CollectorInterface
 
     private function getStatus(string $moduleName): string
     {
-        return $this->moduleManager->isEnabled($moduleName) ? 'enabled' : 'disabled';
+        return $this->moduleManager->isEnabled($moduleName) ? 'Enabled' : 'Disabled';
     }
 }
