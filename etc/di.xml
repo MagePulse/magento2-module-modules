@@ -24,6 +24,7 @@
             <argument name="collectors" xsi:type="array">
                 <item name="mainGroup" xsi:type="array">
                     <item name="modules" xsi:type="object">MagePulse\Modules\Model\Collectors\ModulesModel</item>
+                    <item name="dependencies" xsi:type="object">MagePulse\Modules\Model\Collectors\DependenciesModel</item>
                 </item>
             </argument>
         </arguments>
