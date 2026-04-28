@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/MagePulse/magento2-module-modules/compare/v1.1.1...v1.2.0) (2026-04-28)
+
+
+### Bug Fixes
+
+* simplify return structure in DependenciesModel ([023c81c](https://github.com/MagePulse/magento2-module-modules/commit/023c81ccf391dc996daee9a87f660c955279fc7c))
+
+
+### Features
+
+* add DependenciesModel to collect non-Magento composer dependencies ([305f0d2](https://github.com/MagePulse/magento2-module-modules/commit/305f0d225d0e7c1d134935b17c0f78520a307b27))
+
+
+
 ## [1.1.1](https://github.com/MagePulse/magento2-module-modules/compare/v1.1.0...v1.1.1) (2026-04-11)
 
 
