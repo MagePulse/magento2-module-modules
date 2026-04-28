@@ -37,7 +37,7 @@ class DependenciesModel implements CollectorInterface
 
     public function getData(): array
     {
-        return ['dependencies' => $this->getDependencies()];
+        return $this->getDependencies();
     }
 
     private function getDependencies(): array
